@@ -1,0 +1,30 @@
+\ProvidesPackage{LocalF}
+
+
+\renewenvironment{abstract} %%%% Abstract personalization
+ {\small
+  \begin{center}
+  \bfseries \abstractname\vspace{-.5em}\vspace{0pt}
+  \end{center}
+  \list{}{%
+    \setlength{\leftmargin}{-0mm}% <---------- CHANGE HERE
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \item\relax}
+ {\endlist}
+ 
+ \newenvironment{abstractc} %%%% Abstract personalization
+ {\small
+  \begin{center}
+  \bfseries Abstract\vspace{-.3em}\vspace{0pt}
+  \end{center}
+  \list{}{%
+    \setlength{\leftmargin}{-0mm}% <---------- CHANGE HERE
+    \setlength{\rightmargin}{\leftmargin}%
+    \thispagestyle{empty}
+  }%
+  \item\relax}
+ {\endlist}
+ 
+ \renewcommand\cftappendixname{\appendixname~} %% Appendix ???
+
